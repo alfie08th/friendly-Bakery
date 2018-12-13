@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>BaBaBake</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+<body>
+  <%= erb :"partials/drawer" %>
+  <ul id="sticky_bar">
+      <li id="one1"><i class="fab fa-facebook fa-4x"></i></li>
+      <li id="two"><i class="fab fa-instagram fa-4x"></i></li>
+      <li id="three"><i class="fab fa-twitter fa-4x"></i></li>
+      <li id="four"><i class="fab fa-snapchat fa-4x"></i></li>
+  </ul>
+  <%= erb :"partials/nav" %>
+  <%= erb :"partials/pastries" %>
+  <%= erb :"partials/delicacies" %>
+  <%= erb :"partials/delicacies2" %>
+  <%= erb :"partials/delicacies3" %>
+  <div id="my_bookShelf">
+    <% if @books %>
+      <% for book in @books do %>
+          <div id="book_card">
+              <div id="book_image">
+                  <img class="that_book_image" >
+                <p id="img_para">Some text to hover the img when user wants to read about the book, Some text to hover the img when user wants to read about the book</p>
+              </div>
+              <h1 id="name">Hello <%= @name %>!</h1>
+              <h1 id="title">book Name:<%= book.title %> </h1>
+              <button id="read_more">More</button>
+          </div>
+      <% end %>
+    <% end %>
+
+  </div>
+
+  <h1 id="title_for_page">Lyrics For The Soul</h1>
+  <div id="paragraph">
+    <h1 id="head2">‘carnal Apple, Woman Filled, Burning Moon,’</h1>
+    <h3 id="h3ad">~ Pablo Nerudo</h3>
+    <p id="p1">
+Carnal apple, Woman filled, burning moon,<br>
+dark smell of seaweed, crush of mud and light,<br>
+what secret knowledge is clasped between your pillars?<br>
+What primal night does Man touch with his senses?<br>
+Ay, Love is a journey through waters and stars,<br>
+through suffocating air, sharp tempests of grain:<br>
+Love is a war of lightning,<br>
+and two bodies ruined by a single sweetness.<br>
+Kiss by kiss I cover your tiny infinity,<br>
+your margins, your rivers, your diminutive villages,<br>
+and a genital fire, transformed by delight,<br>
+slips through the narrow channels of blood<br>
+to precipitate a nocturnal carnation,<br>
+to be, and be nothing but light in the dark.<br></p>
+<h1 id="head2">‘in The Wave-Strike Over Unquiet Stones’</h1>
+<h3 id="h3ad">~ Pablo Nerudo</h3>
+<p id="p1">In the wave-strike over unquiet stones<br>
+the brightness bursts and bears the rose<br>
+and the ring of water contracts to a cluster<br>
+to one drop of azure brine that falls.<br>
+O magnolia radiance breaking in spume,<br>
+magnetic voyager whose death flowers<br>
+and returns, eternal, to being and nothingness:<br>
+shattered brine, dazzling leap of the ocean.<br>
+Merged, you and I, my love, seal the silence<br>
+while the sea destroys its continual forms,<br>
+collapses its turrets of wildness and whiteness,<br>
+because in the weft of those unseen garments<br>
+of headlong water, and perpetual sand,<br>
+we bear the sole, relentless tenderness<br></p>
+<h1 id="jackhead">‘dawn Of Us’</h1>
+<h3 id="h3ad">~ Jackson</h3>
+<p id="p1">Keep that addicting smile that you have<br>
+You're my own, no doubt for sure, I mean what I said<br>
+Girl, into you now, into you now<br>
+Wish I could say these words to you beside a fireplace now<br>
+Hold up, just hold up baby, I ain't no filthy player<br>
+You be the Mara Jade, I'll be your Skywalker<br>
+Every perspective of yours is like a magazine cover<br>
+Hope one day the person I give my ring to is you<br>
+Girl, we gon', we gon', we gon' gon' reach the paradise<br>
+We are, we know, for you, yeah I will sacrifice<br>
+Girl, we gon', we gon', we gon' gon' reach the paradise<br>
+We are, we know, for you, yeah I will sacrifice<br></p>
+    <p id="p1"></p>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>

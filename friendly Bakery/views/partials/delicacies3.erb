@@ -1,0 +1,14 @@
+<div id="my_delicacies3">
+  <% if @myMuffin %>
+    <% for muffin in @myMuffin do %>
+        <div id="that_delicacies3" class="delicacies_class">
+          <img id="that_image3" src="<%= muffin.image %>">
+          </div>
+          <div id="that_description3">
+            <h4 id="item_name3"><%= muffin.name %></h4>
+            <h3 id="item_price3"><%= muffin.price %></h3>
+          </div>
+        </div>
+    <% end %>
+  <% end %>
+</div>

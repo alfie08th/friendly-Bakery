@@ -1,0 +1,369 @@
+body {
+  font-family: sans-serif;
+}
+
+*{
+  padding:0;
+  margin:0;
+}
+
+#big_drawer{
+  width:28%;
+  height:830px;
+  position: fixed;
+}
+#drawer_holder{
+  width: 100%;
+  height:100%;
+  position: relative;
+}
+#burger{
+  width:50px;
+  height:50px;
+  background-color: dodgerblue;
+  border-radius: 5px;
+  position: absolute;
+}
+
+#drawer{
+  width: 100%;
+  height:100%;
+  background-color:rgba(0,0,0,0.89);
+  box-shadow: 2px 2px 35px rgba(0,0,0,0.3);
+  font-family: 'Roboto';
+  z-index: 2;
+  display: none;
+}
+#burger:active{
+  display:inline;
+  background-color: darkred;
+
+}
+#wallpaper{
+  width:100%;
+  height:35%;
+  background-color:orange;
+  z-index: 2;
+}
+#round_pic{
+  width: 140px;
+  height:140px;
+  border-radius: 50%;
+  background-color:pink;
+  position: absolute;
+  top:0;
+  margin:200px 0px 0px 50px;
+}
+#drop_down{
+  margin-top: 50px;
+  padding:50px;
+  font-family: 'Roboto';
+  list-style: none;
+}
+
+#top_div, #top2_div, #bottom_div, #last_div{
+line-height: 4em;
+}
+
+/********************** Navigation drawer styling ends here **********************************/
+#form_div{
+  width:20%;
+  height:150px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  background-color: #ffd5c0;
+  text-align: center;
+}
+#text_Input{
+  width:98%;
+  height:45px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+#submit_Button{
+  width:70%;
+  height:50px;
+  margin: 0 auto;
+}
+
+#my_pastries{
+  width:80%;
+  height:500px;
+  background-color: #3b5997;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom:50px;
+  margin-left: 160px;
+  padding:20px;
+}
+
+#muffin, #cookies, #cake{
+  width:28%;
+  height:400px;
+  display:inline-block;
+  background-color:orange;
+  float: left;
+  margin: 50px;
+  transition: .5s;
+  border-radius: 50%;
+}
+
+span{
+  font-size: 36px
+  color:white;
+}
+
+#cookies{
+  /* margin-left:50px; */
+  animation: hovered 4.5s infinite linear;
+}
+#cake{
+  animation: hovered 4.5s infinite linear;
+    animation-delay: .3s;
+}
+#muffin{
+  animation: hovered 4.5s infinite linear;
+    animation-delay: .6s;
+}
+@keyframes hovered{
+  0%{
+    /* margin-top: 25px; */
+    box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+    transform: translateY(0px);
+  }
+  50%{
+    /* margin-top: 0px; */
+    box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+    transform: translateY(-50px);
+  }
+ 100%{
+   /* margin-top: 50px; */
+   box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+   transform: translateY(0px);
+ }
+}
+#my_delicacies{
+    width:80%;
+    height:500px;
+    background-color: #3b5997;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom:50px;
+    padding:20px;
+}
+#my_delicacies2{
+    width:80%;
+    height:500px;
+    background-color: #3b5997;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    padding:20px;
+}
+#my_delicacies3{
+    width:80%;
+    height:500px;
+    background-color: #3b5997;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding:20px;
+}
+
+#that_delicacies, #that_delicacies2, #that_delicacies3{
+  width:22%;
+  height:400px;
+  display:inline-block;
+  background-color:orange;
+  float: left;
+  margin: 50px;
+  transition: .5s;
+}
+
+#that_image, #that_image2, #that_image3{
+  width:100%;
+  height:70%;
+  background-color: #e21e1d;
+}
+#item_name, #item_name2, #item_name3{
+  font-size: 25px;
+  margin:2px;
+}
+#item_price, #item_price2, #item_price3{
+  font-size: 35px;
+  margin:2px;
+}
+
+
+#my_bookShelf{
+    width:80%;
+    height:500px;
+    background-color: #ffd5c0;
+    margin: 0 auto;
+}
+
+
+#book_card{
+  width:300px;
+  height:100%;
+  background-color: white;
+  border-radius: 5px;
+  float: left;
+  margin-left: 130px;
+  box-shadow:5px 5px 15px rgba(0,0,0,0.5);
+}
+#book_image{
+  width:100%;
+  height:78%;
+  position: relative;
+  /* background: purple; */
+}
+.that_book_image{
+  width: 100%;
+  height:100%;
+  /* background-color: red; */
+}
+#img_para{
+width: 80%;
+height:auto;
+position: absolute;
+transition: .5s;
+font-size: 24px;
+margin:50px 20px 20px 35px;
+line-height: 1.5em;
+top:0;
+opacity: 0;
+}
+/* #img_para:hover{
+  opacity: 1;
+} */
+h1{
+  color:#020006;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+}
+#name{
+  padding:10px;
+}
+
+#title{
+ padding:10px;
+}
+/*********************** Book Shelf styling ends here **********************************/
+
+#sticky_bar{
+  width:75px;
+  /* margin-left: 30px; */
+  height:400px;
+  background-color:#003366;
+  position: fixed;
+  list-style-type: none;
+  text-align: left;
+  padding:25px 5px 0px 15px;
+  border-radius: 5px;
+  float: right;
+  position: sticky;
+  top: 0;
+}
+
+#nav_ul{
+  height:100%;
+  padding-top: 20px;
+  font-family: 'Roboto';
+}
+#left_div, #middle_div, #right_div{
+  /* background-color: rgba(255, 255, 255, 0.98); */
+  float: left;
+  width:26.67%;
+  height: 100%;
+  margin-left:60px;
+  text-align: center;
+  transform-origin: left;
+  list-style: none;
+}
+
+a{
+  font-size: 2.5em;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+a:hover{
+  color:pink;
+}
+
+#one1, #two, #three, #four{
+  width:60px;
+  height:60px;
+  background-color:white;
+  margin-top:25px;
+  margin-bottom: 15px;
+  border-radius: 15px;
+}
+
+#sticky_bar:hover{
+  transition: .2s;
+  opacity:0;
+}
+
+#nav_bar{
+  width:80%;
+  height:90px;
+  background-color: rgba(0,0,0,0.87);
+  padding-left: 30px;
+  border-radius: 5px;
+  margin:0 auto;
+}
+
+#form-up, #title_for_page{
+  margin:0;
+  left:0;
+  right:0;
+  margin:150px 0% 0px 43%;
+}
+
+#title_for_page{
+  color:#020006;
+}
+#head2{
+    margin:0;
+    left:0;
+    right:0;
+    margin:150px 0% 0px 35%;
+    color:darkred;
+}
+#jackhead{
+      margin:0;
+      left:0;
+      right:0;
+      margin:150px 0% 0px 45%;
+      color:darkred;
+
+}
+#h3ad{
+    margin:0;
+    left:0;
+    right:0;
+    margin:25px 0% 0px 55%;
+    color:darkred;
+}
+
+#p1{
+  line-height: 2em;
+  font-family: monospace;
+  margin:0;
+  left:0;
+  right:0;
+  font-size: 18px;
+  font-weight: 800;
+  margin:50px 0% 0px 40%;
+}

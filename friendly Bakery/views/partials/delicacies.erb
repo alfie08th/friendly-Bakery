@@ -1,0 +1,13 @@
+<div id="my_delicacies">
+  <% if @myCookies %>
+    <% for cookies in @myCookies do %>
+        <div id="that_delicacies" class="delicacies_class">
+          <img id="that_image" src="<%= cookies.image %>">
+          <div id="that_description">
+            <h4 id="item_name"><%= cookies.name %></h4>
+            <h3 id="item_price"><%= cookies.price %></h3>
+          </div>
+        </div>
+    <% end %>
+  <% end %>
+</div>
